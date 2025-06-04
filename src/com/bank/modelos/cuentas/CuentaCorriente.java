@@ -4,10 +4,20 @@
  */
 package com.bank.modelos.cuentas;
 
+import com.bank.modelos.clientes.InfoCliente;
+
 /**
  *
  * @author franciscagoeppinger
  */
-public class CuentaCorriente {
+public class CuentaCorriente extends CuentaBancaria implements InfoCliente {
+
+    
+
+    @Override
+    public void mostrarInformacionCliente() {
+        System.out.println("Número de cuenta: " + getNumeroCuenta());
+        System.out.println("Saldo: " + getSaldo());
+    }
     
 }

@@ -9,6 +9,6 @@ package com.bank.modelos.clientes;
  * @author franciscagoeppinger
  */
 public interface InfoCliente {
-    String mostrarInformacionCliente();
+    void mostrarInformacionCliente();
     
 }
